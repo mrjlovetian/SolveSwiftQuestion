@@ -55,3 +55,27 @@ func scaleImageImageUrl(imageUrl: String) -> NSData {
     }
 ```
 
+## 颜色转换成图片
+```
+class func imageWithColor(color:UIColor) -> UIImage {
+        
+        let rect: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1)
+        UIGraphicsBeginImageContextWithOptions(CGSize(width:1, height:1), false, 0)
+        color.setFill()
+        UIRectFill(rect)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
+    }
+```
+
+## 正确的隐藏导航栏底部的细线
+```
+public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+    }
+```
+
+
