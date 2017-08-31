@@ -1,5 +1,5 @@
 # SolveSwiftQuestion
-###懒加载方法
+### 懒加载方法
 ```
 lazy fileprivate var customerImageView:UIImageView = {
         () -> UIImageView in
