@@ -78,4 +78,22 @@ public override func viewWillAppear(_ animated: Bool) {
     }
 ```
 
+## 拨打电话
+```
+UIApplication.shared.openURL(URL(string: "telprompt://9527")!)
+```
+
+## swift类方法
+```
+class func customizedNavigationController() ->(){
+    
+}
+```
+
+## swift实例方法
+```
+func customizedNavigationController() -> (){
+
+}
+```
 
